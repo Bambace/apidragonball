@@ -1,0 +1,33 @@
+  body{
+    background-color: brown;
+  }
+  
+  
+  /* Aseguramos que todas las tarjetas tengan la misma altura */
+  .card {
+    height: 100%; /* Las tarjetas deben ocupar todo el espacio disponible */
+    display: flex;
+    flex-direction: column; /* Flex para que los elementos se alineen bien */
+    overflow: hidden; /* Asegura que el contenido no se desborde fuera de la tarjeta */
+    position: relative; /* Necesario para el z-index */
+    background-color: rgba(211, 65, 65, 0.05);
+  }
+
+  .card-body {
+    flex-grow: 1; /* Hace que el cuerpo de la tarjeta ocupe el espacio restante */
+    backdrop-filter: blur(50px);
+
+  }
+
+  .card-img-top {
+    object-fit: contain; /* La imagen se ajusta sin recortarse */
+    height: 300px; /* Tamaño fijo para las imágenes */
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho de la tarjeta */
+    transition: transform 0.3s ease-in-out; /* Agregamos la transición solo a la imagen */
+  }
+
+  /* Efecto hover para agrandar solo la imagen */
+  .card-img-top:hover {
+    transform: scale(1.2); /* Agranda la imagen a */
+    cursor: pointer; /* Cambiamos el cursor para indicar que se puede interactuar */
+  }
