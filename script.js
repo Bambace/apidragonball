@@ -24,6 +24,7 @@ fetch(urlDb)
               <h5 class="card-title">${character.name}</h5>
               <p class="card-text">Especie: ${character.species}</p>
               <p class="card-text">Raza: ${character.race}</p>
+              <p class="card-text">Raza: ${character.ki}</p>
               <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDescription${character.id}" aria-expanded="false" aria-controls="collapseDescription${character.id}">
                 Ver descripción
               </button>
